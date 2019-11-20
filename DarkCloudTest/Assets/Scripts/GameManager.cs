@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     {
         _uiManager = FindObjectOfType<UIManager>();
         currentSpawnTime = spawnTime;
+        Time.timeScale = 1;
     }
     private void Update()
     {
@@ -68,5 +70,10 @@ public class GameManager : MonoBehaviour
     public void AddScore()
     {
         score++;
+        _uiManager.SetText("Score: " + score.ToString());
+    }
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

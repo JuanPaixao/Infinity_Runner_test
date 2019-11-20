@@ -6,10 +6,13 @@ public class Player : MonoBehaviour
     public int HP;
     private GameManager _gameManager;
     public Collider2D playerCollider;
+    private UIManager _uiManager;
 
     private void Awake()
     {
         _gameManager = FindObjectOfType<GameManager>();
+        _uiManager = FindObjectOfType<UIManager>();
+       // _uiManager.SetSliderBar(HP);
     }
     private void Update()
     {
@@ -35,5 +38,6 @@ public class Player : MonoBehaviour
     public void TakeDamage()
     {
         HP--;
+     //   _uiManager.UpdateSliderBar(HP);
     }
 }
