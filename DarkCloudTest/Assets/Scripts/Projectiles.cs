@@ -6,6 +6,7 @@ public class Projectiles : MonoBehaviour
     private Animator _animator;
     private SpriteRenderer _sprite;
     private GameManager _gameManager;
+    public AudioClip explosionSound;
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -22,6 +23,7 @@ public class Projectiles : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            GetComponent<AudioSource>().PlayOneShot(explosionSound, 1);
             _animator.SetTrigger("Destroyed");
             this.projectileSpeed = 0f;
             Player player = other.gameObject.GetComponent<Player>();
