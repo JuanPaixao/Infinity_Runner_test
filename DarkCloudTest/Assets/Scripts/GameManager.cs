@@ -11,11 +11,14 @@ public class GameManager : MonoBehaviour
     private UIManager _uiManager;
     public bool isPaused;
     public int score;
+    public Ranking ranking;
+    private int id;
     private void Start()
     {
         _uiManager = FindObjectOfType<UIManager>();
         currentSpawnTime = spawnTime;
         Time.timeScale = 1;
+        AddToRanking();
     }
     private void Update()
     {
@@ -71,6 +74,14 @@ public class GameManager : MonoBehaviour
     {
         score++;
         _uiManager.SetText("Score: " + score.ToString());
+    }
+    public void AddToRanking()
+    {
+        this.id = this.ranking.AddScore("nome", this.score);
+    }
+    public void ChangeName(string name)
+    {
+        this.ranking.ChangeName(name, this.id);
     }
     public void LoadScene(string sceneName)
     {
