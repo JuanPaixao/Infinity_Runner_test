@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
+    //Classe responsável por avisar para o gerenciador de jogo quando um projétil já "passou" pelo jogador em seu detector de pontos e assim, pontuar
     private GameManager _gameManager;
     private void Awake()
     {

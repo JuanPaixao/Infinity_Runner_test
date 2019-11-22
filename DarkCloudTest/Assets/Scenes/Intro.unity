@@ -204,7 +204,6 @@ MonoBehaviour:
   weapon: 0
   projectileSpawner: {fileID: 74658853}
   isGameScene: 0
-  time: 0
   spawnTime: 2
   currentSpawnTime: 0
   difficultyTime: 0.05
@@ -213,6 +212,8 @@ MonoBehaviour:
   minSpawnTime: 0.5
   isPaused: 0
   score: 0
+  ranking: {fileID: 0}
+  isRankingScreen: 0
 --- !u!4 &102853537
 Transform:
   m_ObjectHideFlags: 0
@@ -926,11 +927,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -2901657434136475660, guid: 0513a1e1b668ff34980ad32e82f59b36,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3543672161681387420, guid: 0513a1e1b668ff34980ad32e82f59b36,
         type: 3}
       propertyPath: m_Name
@@ -1007,6 +1003,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 574590286, guid: 0513a1e1b668ff34980ad32e82f59b36, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2901657434136475660, guid: 0513a1e1b668ff34980ad32e82f59b36,
+        type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -1412,7 +1413,7 @@ PrefabInstance:
     - target: {fileID: 6219754554753078359, guid: 08b925f20974141449591960602b00b0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6219754554753078358, guid: 08b925f20974141449591960602b00b0,
         type: 3}
@@ -2232,10 +2233,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 963446201, guid: f256644f43c5d254499e9f473c939416, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8289339634814108299, guid: f256644f43c5d254499e9f473c939416,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2306,6 +2303,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 963446201, guid: f256644f43c5d254499e9f473c939416, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8289339634814108298, guid: f256644f43c5d254499e9f473c939416,
         type: 3}
       propertyPath: m_Enabled
@@ -2315,11 +2316,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289339636145237256, guid: f256644f43c5d254499e9f473c939416,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.70339197
       objectReference: {fileID: 0}
     - target: {fileID: 8289339635403576822, guid: f256644f43c5d254499e9f473c939416,
         type: 3}
@@ -2501,11 +2497,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.183192
       objectReference: {fileID: 0}
-    - target: {fileID: 8289339635925026984, guid: f256644f43c5d254499e9f473c939416,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.862848
-      objectReference: {fileID: 0}
     - target: {fileID: 8289339634305080180, guid: f256644f43c5d254499e9f473c939416,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -2595,6 +2586,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289339636145237256, guid: f256644f43c5d254499e9f473c939416,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.70339197
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289339635925026984, guid: f256644f43c5d254499e9f473c939416,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.862848
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8289339634814108298, guid: f256644f43c5d254499e9f473c939416, type: 3}

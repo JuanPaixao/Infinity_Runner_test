@@ -7,6 +7,8 @@ TagManager:
   - Red
   - Blue
   - Projectile
+  - RankItem
+  - MusicPlayer
   layers:
   - Default
   - TransparentFX

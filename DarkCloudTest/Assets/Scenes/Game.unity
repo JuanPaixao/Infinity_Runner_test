@@ -248,7 +248,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &102853535
 GameObject:
@@ -283,7 +283,6 @@ MonoBehaviour:
   weapon: 0
   projectileSpawner: {fileID: 74658853}
   isGameScene: 1
-  time: 0
   spawnTime: 2
   currentSpawnTime: 0
   difficultyTime: 0.05
@@ -292,6 +291,8 @@ MonoBehaviour:
   minSpawnTime: 0.5
   isPaused: 0
   score: 0
+  ranking: {fileID: 0}
+  isRankingScreen: 0
 --- !u!4 &102853537
 Transform:
   m_ObjectHideFlags: 0
@@ -304,7 +305,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &120878400 stripped
 Transform:
@@ -408,7 +409,7 @@ RectTransform:
   - {fileID: 1397233771}
   - {fileID: 1292344715}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -619,7 +620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &460600827
 MonoBehaviour:
@@ -697,7 +698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -1945,7 +1946,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1292344714
 GameObject:
@@ -2276,7 +2277,7 @@ Transform:
   - {fileID: 120878400}
   - {fileID: 977330451}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1646154017
 GameObject:
@@ -2442,7 +2443,7 @@ Transform:
   - {fileID: 2129791492}
   - {fileID: 973260186}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1788374013
 GameObject:
@@ -4845,5 +4846,35 @@ PrefabInstance:
       propertyPath: HP
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8289339634814108298, guid: f256644f43c5d254499e9f473c939416,
+        type: 3}
+      propertyPath: collisionScore
+      value: 
+      objectReference: {fileID: 460600824}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f256644f43c5d254499e9f473c939416, type: 3}
+--- !u!1 &8289339634621349165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8289339634814108297, guid: f256644f43c5d254499e9f473c939416,
+    type: 3}
+  m_PrefabInstance: {fileID: 8289339634621349164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8289339634621349166
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8289339634621349165}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a3e35e5d5d36b1046929e9c0e9c4746b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
